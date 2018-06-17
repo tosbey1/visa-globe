@@ -1,0 +1,16 @@
+.where-do-you-want-to-go-form {
+	right: -400px;
+	transition: 1s;
+}
+.header-nav_open {
+	display: flex;
+  position: absolute;
+  left: -19px;
+  bottom: 16px;
+  background-color: white;
+  padding: 3px;
+  text-decoration: none;
+}
+.menushow {
+	right: 0 !important;
+}

@@ -1,0 +1,51 @@
+/*!
+Theme Name: Sample Theme
+Theme URI: http://decubing.com/
+Author: Decubing
+Author URI: http://decubing.com
+Description: A WordPress Starter Theme
+Version: 0.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: decubing
+Tags:
+*/
+
+/*--------------------------------------------------------------
+# Standard Variables
+--------------------------------------------------------------*/
+@import "styles/standards";
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@import "styles/fonts/font-awesome/scss/font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700,700i');
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@import "styles/mixins/backgrounds";
+@import "styles/mixins/buttons";
+@import "styles/mixins/responsive";
+
+/*--------------------------------------------------------------
+# Template Parts
+--------------------------------------------------------------*/
+@import "styles/template_parts/features";
+@import "styles/template_parts/loop_content";
+@import "styles/template_parts/layouts";
+
+/*--------------------------------------------------------------
+# Additional Elements: Plugin Styles, Includes, Header, .. etc.
+--------------------------------------------------------------*/
+@import "styles/etc/footer";
+@import "styles/etc/header";
+@import "styles/etc/includes";
+@import "styles/etc/animate";
+@import "styles/etc/wordpress";
+
+/*--------------------------------------------------------------
+# Document Properties
+--------------------------------------------------------------*/
+@import "styles/document";

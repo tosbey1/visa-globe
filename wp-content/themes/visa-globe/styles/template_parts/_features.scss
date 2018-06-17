@@ -1,0 +1,141 @@
+/*--------------------------------------------------------------
+# Features: Catch All Template Part
+--------------------------------------------------------------*/
+body {
+	background:black;text-align:center;margin-top:20px;
+	overflow: hidden;
+	}
+#turnglobe {
+	display: flex;
+}
+#worldmap {margin:0 auto;z-index: 999;}
+#worldmap:hover {
+	z-index: -1;
+}
+#worldmap svg {;border-radius: 200px;box-shadow:0 0 10px rgba(0,0,0,0.4);}
+.land {
+	fill: rgba(188,188,188,.94); 
+	position: absolute;
+	}
+.star-container {
+	width: 20px;
+}
+.star {
+	color: white;
+	border-radius: 50%;
+/*
+	width: 5px;
+  height: 5px;
+*/
+  background: white;
+  position: absolute;
+//   z-index: -1;
+  .star-info {
+	  display: none;
+  }
+}
+
+.star:hover {
+	z-index: 99999;
+}
+.gform_footer {
+	margin-left: 22px;
+}
+#gform_submit_button_1 {
+	
+}
+.header-nav_open {
+	    display: flex;
+    position: absolute;
+    left: -19px;
+    bottom: 17px;
+}
+.where-do-you-want-to-go-form {
+ 	position: absolute;
+	width: 400px;
+	bottom: 0;
+  right: -97px;
+  z-index: 99999;
+  input {
+	  width: 100%;
+	  border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    margin-left: 22px;
+    .focus-border {
+	        position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.4s;
+    }
+  }
+  #gform_1 {
+	  background-color: white;
+  }
+}
+#gform_submit_button_1 {
+	background: #d32b22;
+  color: wheat;
+  border-radius: 0;
+  padding: 5px;
+  margin-left: 22px;
+}
+.gform_footer {
+	margin-left: 22px;
+}
+.ginput_container {
+	margin-left: 22px;
+}
+.gform_title {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.gfield_label {
+	padding: 20px;
+}
+
+#input_1_2 {
+	width: 100%;
+	margin: 0;
+	width: 80%;
+}
+[tooltip]:before {
+    /* needed - do not touch */
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;    
+}
+
+[tooltip]:hover:before {
+    /* needed - do not touch */
+    opacity: 1;
+    
+    /* customizable */
+    background: white;
+    margin-top: -50px;
+    margin-left: 20px;    
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
+
+#turnglobe {
+	z-index: 999;
+}
+

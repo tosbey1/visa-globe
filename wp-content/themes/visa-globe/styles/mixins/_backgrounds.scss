@@ -1,0 +1,36 @@
+@mixin background($type, $text_option:""){
+  color: $color-white; 
+  a{
+    color: $color-white;
+  }
+  @if $type == "white" {
+    background-color: $color-white;
+    a{
+      color: inherit;
+    }
+  }
+  @if $type == "transparent" {
+    background-color: transparent;
+  }
+  @if $type == "orange" {
+    background-color: $color-orange;
+  }
+  @if $type == "light_blue" {
+    background-color: $color-light_blue;
+    color: inherit;
+    a{
+      color: inherit;
+    }
+  }
+  @if $type == "blue" {
+    background-color: $color-blue;
+  }
+  @if $text_option == "white_sibling" {
+    & ~ div{
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Document Properties: Properties for basic HTML elements
+--------------------------------------------------------------*/
+.menushow {
+	display: block;
+}
+/*
+.where-do-you-want-to-go-form {
+	
+}
+*/
+body{
+  margin: 0;
+  font-family: $font-family-ubuntu;
+  @media (max-width: $screen-smaller) {
+    font-size: 93%;
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  box-sizing: border-box !important;
+}
+img, a img{
+  border: 0;
+}
+a{
+  color: $color-blue;
+  &:active, &:focus{
+    opacity: .8; 
+    outline: 0;
+  }
+}
+form{
+  
+}
+table{
+  
+}
+h1, h2, h3, h4 {
+  line-height: $line-height-standard;
+}
+h1 {
+  @include responsive-largest_font();
+}
+h2 {
+  @include responsive-larger_font();
+}
+h3 {
+  @include responsive-standard_font();
+}
+h4 {
+  @include responsive-smaller_font();
+}
