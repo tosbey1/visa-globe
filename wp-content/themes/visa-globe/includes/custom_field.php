@@ -38,6 +38,7 @@ function create_libdot_cpt() {
 		'supports' => array('title'),
 		'public' => true,
 		'show_ui' => true,
+		'show_in_rest' => true,
 		'show_in_menu' => true,
 		'menu_position' => 5,
 		'show_in_admin_bar' => true,
